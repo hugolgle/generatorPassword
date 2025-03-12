@@ -87,6 +87,7 @@ button:hover {
   font-weight: 600;
   color: #007bff;
   margin-top: 10px;
+  overflow-x: auto;
 }
 
 .form-row {
