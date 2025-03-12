@@ -3,7 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="main.js" defer></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Password Generator</h1>
+    <div class="container">
+      <div class="param-container">
+        <div class="display-container">
+          <h2>Password</h2>
+          <div id="password">your-password</div>
+        </div>
+        <div class="form-row">
+          <label for="length">Length</label>
+          <input
+            type="number"
+            value="8"
+            min="8"
+            max="64"
+            ="length"
+            id="password-length"
+          />
+        </div>
+        <br />
+        <div class="form-row">
+          <label for="uppercase">Uppercase</label>
+          <input
+            type="checkbox"
+            checked
+            name="uppercase"
+            id="password-uppercase"
+          />
+        </div>
+        <br />
+        <div class="form-row">
+          <label for="lowercase">Lowercase</label>
+          <input
+            type="checkbox"
+            checked
+            name="lowercase"
+            id="password-lowercase"
+          />
+        </div>
+        <br />
+        <div class="form-row">
+          <label for="number">Number</label>
+          <input type="checkbox" checked name="number" id="password-number" />
+        </div>
+        <br />
+        <div class="form-row">
+          <label for="symbol">Symbol</label>
+          <input type="checkbox" checked name="symbol" id="password-symbol" />
+        </div>
+        <br />
+        <button id="generate-button">Generate Password</button>
+      </div>
+    </div>
+  </body>
 </html>
