@@ -15,6 +15,11 @@ const passwordSymbol = document.querySelector("#password-symbol");
 
 document.addEventListener("DOMContentLoaded", () => {
   generateButton.addEventListener("click", displayPassword);
+  passwordLength.addEventListener("change", displayPassword);
+  passwordLower.addEventListener("change", displayPassword);
+  passwordUpper.addEventListener("change", displayPassword);
+  passwordNumber.addEventListener("change", displayPassword);
+  passwordSymbol.addEventListener("change", displayPassword);
 
   displayPassword();
 });
